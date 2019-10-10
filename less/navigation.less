@@ -1,24 +1,22 @@
 // Navigation Styles here
 
 header {
-    @media @mobile {
-    display:block;
-    margin: auto;
-  }
   .headernav {
     height: 90px;
     margin: 0 100px;
     .flexbox(row, space-between, center, nowrap);
     @media @mobile {
-    display:block;
-    margin: auto;
+    .flexbox(column, center, center, nowrap);
+      margin: 0 0;
+      border-bottom: 2px dashed @navigation-border;
   }
-  nav {
-    margin-right: 15px;
-    a {
-      .navstyle();
-      font-size: 1.8rem;
+    nav {
+      margin-right: 15px;
+      margin-top: 15px;
+      a {
+        .navstyle();
+        font-size: 1.8rem;
+      }
     }
   }
-}
 }
