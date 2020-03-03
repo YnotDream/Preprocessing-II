@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+header {
+  @media @mobile {
+    margin-top: 10px;
+  }
+  .headernav {
+    height: 90px;
+    margin: 0 100px;
+    .flexbox(row, space-between, center, nowrap);
+    @media @mobile {
+      .flexbox(column, center, center, nowrap);
+      margin: 0 0;
+      height: 75px;
+      border-bottom: 2px dashed @navigation-border;
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 18px;
+      }
+    }
+    nav {
+      margin-right: 15px;
+      a {
+        .navstyle();
+        font-size: 1.8rem;
+        @media @mobile {
+          font-size: 1.5rem;
+          margin: 0 16px;
+        }
+      }
+    }
+  }
+}
+
+.mainimage {
+  @media @mobile {
+    padding: none;
+    margin: auto;
+  }
+}
